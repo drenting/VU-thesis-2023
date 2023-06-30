@@ -11,7 +11,7 @@ def convert_json(in_file, out_file):
         del result['context']
         data.append(result)
 
-    with open('sarcasm/'+out_file, 'w', newline='') as csvfile:
+    with open('unprocessed-data/sarcasm/'+out_file, 'w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=['label', 'response'], delimiter='\t') ## context-1, etc
         writer.writeheader()
         writer.writerows(data)
