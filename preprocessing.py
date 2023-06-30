@@ -36,10 +36,6 @@ def main(argv=None): #infile, sep, column, outfile
     df.to_csv(outfile, sep='\t', index=False)
 
 
-in_file = 'irony/train.tsv'
-columnname = 'text'
-out_file = 'irony/train.tsv'
-
-args = [0, 'unprocessed-data/'+in_file, columnname, 'data/'+out_file]
-main(args)
+if __name__ == "__main__":
+    main()
 

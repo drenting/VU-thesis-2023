@@ -31,6 +31,7 @@
 
 4. run train-test-split.py to split IHC into train and test
 
-4. run preprocessing.py on all the datasets
+4. run preprocessing.py on all the datasets. For example: 
+    python irony/train.tsv text irony/train.tsv 
 
 5. ready to run the notebooks!
